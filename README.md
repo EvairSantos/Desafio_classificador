@@ -1,36 +1,29 @@
 # Classificador de Nível de Herói
 
-![Hero Image](link_para_uma_imagem_do_seu_heroi.jpg)
-
 ## Descrição
-
-Este é um simples classificador de nível de herói. Insira o nome e a quantidade de experiência (XP) do seu herói para descobrir em qual nível ele se encontra.
+Este projeto consiste em uma página web interativa que permite aos usuários inserirem o nome e a experiência do herói para determinar seu nível com base em uma escala específica.
 
 ## Demonstração
+[Link para a página de demonstração](#)
 
-![Demo Gif](link_para_uma_demo.gif)
+## Tecnologias Utilizadas
+- HTML
+- CSS
+- JavaScript
 
 ## Como Usar
+1. Faça o download ou clone o repositório.
+2. Abra o arquivo `index.html` em seu navegador.
+3. Preencha o nome e a experiência do herói nos campos fornecidos.
+4. Clique no botão "Classificar" para ver o resultado.
 
-1. Abra o arquivo `index.html` no seu navegador.
-2. Preencha o nome e a XP do herói nos campos apropriados.
-3. Clique no botão "Classificar" para obter o resultado.
+## Estrutura do Código Fonte
+- **index.html:** Contém a estrutura HTML da página.
+- **styles.css:** Folha de estilos para dar uma aparência profissional à página.
+- **script.js:** Código JavaScript responsável pela lógica de classificação do herói.
 
-## Exemplo de Código
+## Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e pull requests.
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classificador de Nível de Herói</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<!-- Seu código HTML aqui -->
-
-<script src="script.js"></script>
-</body>
-</html>
+## Licença
+Este projeto está sob a licença [MIT](LICENSE).
