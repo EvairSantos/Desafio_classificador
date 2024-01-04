@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de Nível de Herói</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        input, button {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Classificador de Nível de Herói</h2>
+
+<label for="nomeHeroi">Nome do Herói:</label>
+<input type="text" id="nomeHeroi" placeholder="Digite o nome do herói">
+
+<br>
+
+<label for="xpHeroi">XP do Herói:</label>
+<input type="number" id="xpHeroi" placeholder="Digite a XP do herói">
+
+<br>
+
+<button onclick="classificarHeroi()">Classificar</button>
+
+<p id="resultado"></p>
+
+<script>
+    function classificarHeroi() {
+        // Obtém os valores dos campos
+        var nomeHeroi = document.getElementById('nomeHeroi').value;
+        var xpHeroi = parseInt(document.getElementById('xpHeroi').value);
+
+        // Determina o nível do herói com base na quantidade de experiência
+        var nivel;
+        if (xpHeroi < 1000) {
+            nivel = "Ferro";
+        } else if (xpHeroi <= 2000) {
+            nivel = "Bronze";
+        } else if (xpHeroi <= 5000) {
+            nivel = "Prata";
+        } else if (xpHeroi <= 7000) {
+            nivel = "Ouro";
+        } else if (xpHeroi <= 8000) {
+            nivel = "Platina";
+        } else if (xpHeroi <= 9000) {
+            nivel = "Ascendente";
+        } else if (xpHeroi <= 10000) {
+            nivel = "Imortal";
+        } else {
+            nivel = "Radiante";
+        }
+
+        // Exibe o resultado na página
+        document.getElementById('resultado').innerText = `O Herói de nome ${nomeHeroi} está no nível de ${nivel}`;
+    }
+</script>
+
+</body>
+</html>
 
